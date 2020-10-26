@@ -1,0 +1,107 @@
+Functionalities:
+	Search food and recipe
+	Create daily log
+	Display daily log
+	Create recipe
+	Allergies/Diet Preferences
+	Profile
+	User Accounts
+	Nutrifacts nutrient calculator
+
+
+Functionalities that need to be tested:
+
+	Models:
+		DailyLog, MealLog, MealFood
+		* create()
+		* get_total()
+
+		Profile
+		* get_metric_profile()
+		* create_profile()
+
+		Recipe
+		* create()
+		* get_total()
+
+		RecipeFood
+		* create()
+		* get_total()
+
+	Views:
+		SearchResultsView
+		RegisterAccountView
+		UpdateProfile
+		Diet and Allergies
+		AddAllergyView
+		AddDietPreferenceView
+		DeleteAllergyView
+		DeleteDietPreferenceView
+		LogView
+		DisplayLogView
+		DetailRecipe
+		ListRecipe
+		CreateRecipe
+		UpdateRecipe
+		DeleteRecipe
+		RecipeView
+	
+
+
+Functionalities that don’t need testing:
+	Models:
+		RecipePreset
+		User Accounts (default Django model)
+		Allergy
+		Diet Preference
+		BrandedIds
+
+	Views:
+		Index
+		Description
+		Nutrifacts
+		LoginView (default Django view)
+		LogoutView (default Django view)
+		PasswordChangeView (default Django view)
+
+Individual tests:
+	Michael:
+		Allergy and Diet Preference Views
+			Add allergy
+			Add diet preference
+			Remove allergy
+			Remove diet preference
+			Register Account View
+			Creates account
+			Logins account automatically
+
+	Athena:
+		Create daily log (view/model)
+			Single food
+			Multiple foods
+			Future date
+
+	Bryce:                                   !!!!!!!!!THESE ARE MINE!!!!!!!!
+		Create recipe
+		 * No foods
+		 * Single food
+		 * Many foods
+		 * Same food multiple times
+		 * Negative/Zero/Large portions
+
+	Tsion:
+		DisplayLogView
+			Logged date
+			Logged time
+			Logged food
+			Portion
+
+	John:
+		Profile Model
+			Update Profile View
+
+	Jalen:
+		Search Food
+			Valid Food search
+			Invalid Food search
+			Null search
